@@ -412,6 +412,9 @@ footer p {
 
 .edu-tags {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
 }
 
 .edu-tag {
@@ -460,5 +463,51 @@ footer p {
     .education-card:hover {
         transform: none;
         /* Disables slide on mobile for better UX */
+    }
+}
+/* Hide hamburger on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        color: var(--text-main);
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: var(--bg-color);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none; /* hidden by default */
+    }
+
+    nav ul.active {
+        display: flex; /* show when active */
+    }
+}
+.code-content {
+    overflow-x: auto;
+}
+
+.code-content pre {
+    white-space: pre;
+}
+
+@media (max-width: 768px) {
+    .code-content pre {
+        white-space: pre-wrap;
+        word-break: break-word;
     }
 }
