@@ -430,7 +430,14 @@ footer p {
     font-size: .95rem;
     font-weight: 700;
 }
-
+.ft-links{
+    display: flex;
+    gap: 20px;
+}
+.ft-links a,
+.ft-links a:visited,
+.ft-links a:hover,
+.ft-links a:active 
 .ft-links a {
     font-family: var(--serif);
     font-size: .7rem;
