@@ -366,11 +366,6 @@ footer p {
     .code-window {
         max-width: 100%;
     }
-
-    nav ul {
-        display: none;
-    }
-
     /* Hide links on mobile for simplicity */
     .container {
         padding: 2rem 1.5rem;
@@ -440,7 +435,7 @@ footer p {
 .ft-links a,
 .ft-links a:visited,
 .ft-links a:hover,
-.ft-links a:active 
+.ft-links a:active, 
 .ft-links a {
     font-family: var(--serif);
     font-size: .7rem;
